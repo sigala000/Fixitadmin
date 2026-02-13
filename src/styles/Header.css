@@ -1,0 +1,89 @@
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-8);
+}
+
+.header-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: var(--spacing-4);
+    color: var(--text-muted);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: var(--spacing-3) var(--spacing-4);
+    padding-left: var(--spacing-12);
+    background: #F3F4F6;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.search-bar input:focus {
+    outline: none;
+    background: #E5E7EB;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6);
+}
+
+.notification-btn {
+    width: 40px;
+    height: 40px;
+    background: #F3F4F6;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.notification-btn .dot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--success);
+    border: 2px solid #F3F4F6;
+    border-radius: 50%;
+}
+
+.view-badge {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.badge-status {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: var(--success);
+    letter-spacing: 0.05em;
+}
