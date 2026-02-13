@@ -1,4 +1,5 @@
-const API_URL = window.location.hostname.includes('onrender.com')
+const isProduction = !['localhost', '127.0.0.1'].includes(window.location.hostname);
+const API_URL = isProduction
     ? 'https://fixitbackend-dzn1.onrender.com/api'
     : 'http://localhost:8000/api';
 
