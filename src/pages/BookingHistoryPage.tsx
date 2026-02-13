@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Calendar, Filter, Download, MoreVertical, Users, Hammer, Clock, CheckCircle, XCircle } from 'lucide-react';
+import { Calendar, Filter, Download, MoreVertical, Clock, CheckCircle, XCircle } from 'lucide-react';
 import StatCard from '../components/StatCard';
 import { AdminService } from '../services/admin';
 import '../styles/BookingHistory.css';
